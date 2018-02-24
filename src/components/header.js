@@ -17,6 +17,10 @@ class Header extends Component{
         );
     }
 
+    redirection(){
+        return <button className='btn btn-primary' onClick={() => this.props.authenticate(true)}>Sign In</button>
+    }
+
     render(){
         return(
             <nav className="navbar navbar-light">
